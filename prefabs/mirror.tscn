@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://bhj5k4agivwe3"]
+
+[ext_resource type="Texture2D" uid="uid://deqp6jwkb8nmi" path="res://assets/mirror.png" id="1_yc1qm"]
+
+[node name="Mirror" type="Area2D"]
+texture_filter = 1
+position = Vector2(1092, 480)
+scale = Vector2(6, 6)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_yc1qm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
