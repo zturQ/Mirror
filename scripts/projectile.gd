@@ -1,6 +1,6 @@
 extends Area2D
 
-@export var speed = 500
+@export var speed = 700
 
 func _process(delta):
 	var direction = Vector2.RIGHT.rotated(rotation)
@@ -11,3 +11,6 @@ func destroy():
 	
 func _on_body_entered(body):
 	destroy()
+	
+	if body.is_in_group("enemies"):
+		body.takedamage()
